@@ -1,3 +1,5 @@
+# NOT SUITABLE FOR DOWNLOAD AS YET, Just started working on this
+
 # CIS for macOS Catalina - Script and Configuration Profile Remediation
 ## INFO:
 
