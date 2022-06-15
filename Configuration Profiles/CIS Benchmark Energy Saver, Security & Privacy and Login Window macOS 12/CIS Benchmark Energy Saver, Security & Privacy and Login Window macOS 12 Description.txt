@@ -1,0 +1,16 @@
+CIS Benchmark Security and Login macOS 12
+* 2.3.1 Ensure an Inactivity Interval of 20 Minutes Or Less for the Screen Saver Is Enabled
+* 2.5.1.1 Ensure FileVault Is Enabled
+* 2.5.2.1 Ensure Gatekeeper is Enabled
+* 2.5.2.2 Ensure Firewall Is Enabled
+* 2.5.2.3 Ensure Firewall Stealth Mode Is Enabled
+* 2.8 Ensure Wake for Network Access Is Disabled
+* 3.1 Ensure Security Auditing Is Enabled
+* 3.2 Ensure Security Auditing Flags Are Configured Per Local Organizational Requirements
+* 3.3 Ensure install.log Is Retained for 365 or More Days and No Maximum Size
+* 5.1.1 Ensure Home Folders Are Secure
+* 5.7 Ensure Automatic Login Is Disabled
+* 5.8 Ensure a Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled
+* 5.13 Ensure a Login Window Banner Exists
+* 6.1.1 Ensure Login Window Displays as Name and Password Is Enabled
+* 6.1.2 Ensure Show Password Hints Is Disabled
