@@ -141,9 +141,7 @@ General | Payload                       | Scope
 ------------------ | ----------------------------- | ---------------- 
 Distribution Method Automatic Description Contents of “CIS Benchmarks Password Policy Description” | Use the Upload function of the Jamf Server to Upload “CIS Password Policy.mobileconfig”. Type in its name and set its Category and Scope. | All Computers
 
-
-![](./media/image1.png){width="6.263888888888889in"
-height="1.4076388888888889in"}
+![](./media/image1.png)
 
 **Scripts**
 
@@ -173,9 +171,7 @@ General | Payload                       | Scope
 ------------------ | ----------------------------- | ----------------
 Trigger Recurring Check-in Frequency Once every week | Script: 3_Security_Remediation.sh (Before) 2_Security_Audit_Compliance.sh (After) Maintenance: Update Inventory | All Computers
 
-![Graphical user interface, application Description automatically
-generated](/Users/ttyler/Desktop/CIS Benchmarking Screen Grabs/media/image2.png){width="6.263888888888889in"
-height="1.0569444444444445in"}
+![Graphical user interface](./media/image2.png)
 
 NOTES:
 
@@ -260,31 +256,16 @@ SCORED CIS EXCEPTIONS:
 
 -   Does not implement pwpolicy commands (5.2.1 - 5.2.8), instead we
     examine profiles to detect if a password policy has been applied
-
 -   Audits but does not actively remediate (due to alternate
     profile/policy functionality within Jamf Pro):
-
-```{=html}
-<!-- -->
-```
 -   2.4.4 Disable Printer Sharing
-
 -   2.5.1.1 Enable FileVault, prefer to user experience via a policy and
     then enabling "User adjustment of FileVault options" Computers \>
     Configuration Profiles \> Security and Privacy \> FileVault, from
     the drop down select "Prevent FileVault from being disabled"
-
 -   5.19 System Integrity Protection status
-
-```{=html}
-<!-- -->
-```
 -   Audits but does not remediate (due to requirement to review the
     device)
-
-```{=html}
-<!-- -->
-```
 -   3.4 Control access to audit records
 
 **REMEDIATED USING CONFIGURATION PROFILES:**
@@ -296,149 +277,88 @@ Profiles as is and plists can be added to a new Configuration Profile as
 Custom Payloads.
 
 **CIS 12 Custom Settings mobileconfig**
-
 > CIS Benchmark Custom Values macOS 12
-
 1.1 Ensure All Apple-provided Software Is Current
-
 1.2 Ensure Auto Update Is Enabled
-
 1.3 Ensure Download New Updates When Available is Enabled
-
 1.4 Ensure Installation of App Update Is Enabled
-
 1.5 Ensure System Data Files and Security Updates Are Downloaded
 Automatically Is Enabled
-
 1.6 Ensure Install of macOS Updates Is Enabled
-
 2.1.2 Ensure Show Bluetooth Status in Menu Bar Is Enabled
-
 2.3.2 Ensure Screen Saver Corners Are Secure
-
 2.3.3 Audit Lock Screen and Start Screen Saver Tools
-
 2.4.2 Ensure Internet Sharing Is Disabled
-
 2.4.7 Ensure Bluetooth Sharing Is Disabled
-
 2.4.12 Ensure Media Sharing Is Disabled
-
 2.4.13 Ensure AirPlay Receiver Is Disabled
-
 2.5.5 Ensure Sending Diagnostic and Usage Data to Apple Is Disabled
-
 2.5.6 Ensure Limit Ad Tracking Is Enabled
-
 2.10 Ensure Secure Keyboard Entry terminal.app is Enabled
-
 2.12 Audit Automatic Actions for Optical Media
-
 2.14 Audit Sidecar Settings
-
 3.6 Ensure Firewall Logging Is Enabled and Configured
-
 4.2 Ensure Show Wi-Fi status in Menu Bar Is Enabled
-
 5.1.4 Ensure Library Validation Is Enabled
-
 5.6 Ensure the root Account Is Disabled
-
 6.1.3 Ensure Guest Account Is Disabled
-
 6.1.4 Ensure Guest Access to Shared Folders Is Disabled
-
 6.3 Ensure Automatic Opening of Safe Files in Safari Is Disabled
 (Automated)
 
 **CIS 12 LoginWindow Security_and_Privacy ScreenSaver mobileconfig**
 
 CIS Benchmark Security and Login macOS 12
-
 -   2.3.1 Ensure an Inactivity Interval of 20 Minutes Or Less for the
     Screen Saver Is Enabled
-
 -   2.5.1.1 Ensure FileVault Is Enabled
-
 -   2.5.2.1 Ensure Gatekeeper is Enabled
-
 -   2.5.2.2 Ensure Firewall Is Enabled
-
 -   2.5.2.3 Ensure Firewall Stealth Mode Is Enabled
-
 -   2.8 Ensure Wake for Network Access Is Disabled
-
 -   3.1 Ensure Security Auditing Is Enabled
-
 -   3.2 Ensure Security Auditing Flags Are Configured Per Local
     Organizational Requirements
-
 -   3.3 Ensure install.log Is Retained for 365 or More Days and No
     Maximum Size
-
 -   5.1.1 Ensure Home Folders Are Secure
-
 -   5.7 Ensure Automatic Login Is Disabled
-
 -   5.8 Ensure a Password is Required to Wake the Computer From Sleep or
     Screen Saver Is Enabled
-
 -   5.13 Ensure a Login Window Banner Exists
-
 -   6.1.1 Ensure Login Window Displays as Name and Password Is Enabled
-
 -   6.1.2 Ensure Show Password Hints Is Disabled
 
 **CIS 12 Restrictions mobileconfig**
-
 -   CIS Benchmark Restrictions macOS 12
-
 -   2.4.10 Ensure Content Caching Is Disabled
-
 -   2.4.11 Ensure AirDrop Is Disabled
-
 -   2.6.1.1 Audit iCloud Configuration
-
 -   Includes:
-
     -   Disable preference pane (Not Scored) - Restrictions payload \>
         Preferences \> disable selected items \> iCloud
-
     -   Disable the use of iCloud password for local accounts (Not
         Scored) - Restrictions payload \> Functionality \> Allow use of
         iCloud password for local accounts (unchecked)
-
     -   Disable iCloud Back to My Mac (Not Scored) - Restrictions
         payload \> Functionality \> Allow iCloud Back to My Mac
         (unchecked)
-
     -   Disable iCloud Find My Mac (Not Scored) - Restrictions payload
         \> Functionality \> Allow iCloud Find My Mac (unchecked)
-
     -   Disable iCloud Bookmarks (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Bookmarks (unchecked)
-
     -   Disable iCloud Mail (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Mail (unchecked)
-
     -   Disable iCloud Calendar (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Calendar (unchecked)
-
     -   Disable iCloud Reminders (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Reminders (unchecked)
-
     -   Disable iCloud Contacts (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Contacts (unchecked)
-
     -   Disable iCloud Notes (Not Scored) - Restrictions payload \>
         Functionality \> Allow iCloud Notes (unchecked)
-
 -   2.6.1.2 Audit iCloud Keychain
-
 -   2.6.1.3 Audit iCloud Drive
-
 -   2.6.1.4 Ensure iCloud Drive Document and Desktop Sync is Disabled
-
 -   2.7.1 Ensure Backup Up Automatically is Enabled
-
 -   4.1 Ensure Bonjour Advertising Services Is Disabled
