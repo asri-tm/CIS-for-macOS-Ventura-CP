@@ -143,7 +143,7 @@ Distribution Method Automatic Description Contents of “CIS Benchmarks Password
 
 ![](./media/image1.png)
 
-**Scripts**
+**Policies and Scripts**
 
 **PREFERENCES**
 
