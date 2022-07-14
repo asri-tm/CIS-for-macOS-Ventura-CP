@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 ####################################################################################################
 #
@@ -49,6 +49,7 @@ Defaults="/usr/bin/defaults"
 ####################################################################################################
 
 plistlocation="/Library/Application Support/SecurityScoring/org_security_score.plist"
+
 auditfilelocation="/Library/Application Support/SecurityScoring/org_audit"
 currentUser="$(/usr/bin/stat -f%Su /dev/console)"
 hardwareUUID="$(/usr/sbin/system_profiler SPHardwareDataType | grep "Hardware UUID" | awk -F ": " '{print $2}' | xargs)"
@@ -57,7 +58,7 @@ logFile="/Library/Application Support/SecurityScoring/remediation.log"
 
 osVersion="$(sw_vers -productVersion | grep -o '^[0-9]\+')"
 if [ "$osVersion" -lt 11 ]; then
-	echo "This script does not support Catalina. Please use https://github.com/jamf/CIS-for-macOS-Catalina-CP instead"
+	echo "This script does not support an OS lower than Big Sur Please use https://github.com/D8Services/CIS-for-macOS-Monterey-CP instead"
 	exit 0
 fi
 
@@ -70,15 +71,22 @@ else
  	echo "$(date -u)" "Beginning Audit" > "$logFile"	
 fi
 
-if [[ ! -e $plistlocation ]]; then
+if [[ ! -e $plistlocation ]]&&[[ ! -e ${configProfileCISPrefs} ]]; then
 	echo "No scoring file present"
+	exit 0
+fi
+
+# Check to see if a configuration profile has been pushed down and use that instead.
+if [[ -f "${configProfileCISPrefs}" ]];then
+	cp "/Library/Managed Preferences/com.d8services.cispreferences.plist" "${plistlocation}"
+	echo "Identified Config profile preferences, copying to local path."
+	echo "$(date -u)" "Copying Preferences from Configuration Profiles to plist location." > "$logFile"
 	exit 0
 fi
 
 # Cleanup audit file to start fresh
 [ -f "$auditfilelocation" ] && rm "$auditfilelocation"
 touch "$auditfilelocation"
-
 
 # 1.1 Ensure All Apple-provided Software Is Current
 # Verify organisational score
@@ -335,7 +343,7 @@ $Defaults write "$plistlocation" OrgScore2_16 -bool false
 
 # 2.17 Audit Passwords System Preference Setting
 echo "$(date -u)" "2.17  Not Check, Password Policy in effect" | tee -a "$logFile"
-echo "$(date -u)" "2.17 Confi Profile verified" | tee -a "$logFile"
+echo "$(date -u)" "2.17 Config Profile verified" | tee -a "$logFile"
 $Defaults write "$plistlocation" OrgScore2_17 -bool false
 
 ### 2.2.1 Enable "Set time and date automatically" (Not Scored)

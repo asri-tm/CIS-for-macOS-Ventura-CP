@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 ####################################################################################################
 #
@@ -52,10 +52,19 @@ echo "$(date -u)" "Beginning remediation" >> "$logFile"
 # Create new logFile
 # echo "$(date -u)" "Beginning remediation" > "$logFile"	
 
-if [[ ! -e $plistlocation ]]; then
+if [[ ! -e $plistlocation ]]&&[[ ! -e ${configProfileCISPrefs} ]]; then
 	echo "No scoring file present"
 	exit 0
 fi
+
+# Check to see if a configuration profile has been pushed down and use that instead.
+if [[ -f "${configProfileCISPrefs}" ]];then
+	cp "/Library/Managed Preferences/com.d8services.cispreferences.plist" "${plistlocation}"
+	echo "Identified Config profile preferences, copying to local path."
+	echo "$(date -u)" "Copying Preferences from Configuration Profiles to plist location." > "$logFile"
+	exit 0
+fi
+
 
 # 1.1 Verify all Apple provided software is current
 # Verify organizational score

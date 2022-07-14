@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 ####################################################################################################
 #
@@ -49,6 +49,7 @@ dir="/Library/Application Support/SecurityScoring"
 if [[ ! -e "$dir" ]]; then
     mkdir "$dir"
 fi
+
 plistlocation="$dir/org_security_score.plist"
 
 
@@ -133,7 +134,7 @@ OrgScore2_2_1="true"
 OrgScore2_2_2="false"
 
 # 2.3.1 Ensure an Inactivity Interval of 20 Minutes Or Less for the Screen Saver Is Enabled
-# Confirmed in Config Profile 
+# Confirmed in Config Profile https://fwd.jamfcloud.com/OSXConfigurationProfiles.html?id=20&o=r
 OrgScore2_3_1="true"
 
 # 2.3.2 Ensure Screen Saver Corners Are Secure
@@ -233,6 +234,7 @@ OrgScore2_5_4="false"
 OrgScore2_5_5="true"
 
 # 2.5.6 Ensure Limit Ad Tracking Is Enabled
+# https://fwd.jamfcloud.com/OSXConfigurationProfiles.html?id=22
 OrgScore2_5_6="true"
 
 # 2.5.7 Audit Camera Privacy and Confidentiality
@@ -368,7 +370,7 @@ OrgScore5_10="true"
 OrgScore5_11="true"
 
 # 5.12 Ensure a Custom Message for the Login Screen Is Enabled
-# Jamf Connect
+# Jamf Connect Config Profile
 OrgScore5_12="true"
 
 # 5.13 Ensure a Login Window Banner Exists
