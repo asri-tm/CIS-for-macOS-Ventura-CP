@@ -1,0 +1,18 @@
+CIS Script Descriptions
+* 1.7 Audit Computer Name
+* 2.1.1 Ensure Bluetooth Is Disabled If No Devices Are Paired
+* 2.2.1 Ensure Set time and date automatically Is Enabled
+* 2.2.2 Ensure time set is within appropriate limits
+* 2.4.1 Ensure Remote Apple Events Is Disabled
+* 2.4.3 Ensure Screen Sharing Is Disabled
+* 2.4.4 Ensure Printer Sharing Is Disabled
+* 2.4.5 Ensure Remote Login Is Disabled
+* 2.4.6 Ensure DVD or CD Sharing Is Disabled
+* 2.4.8 Ensure File Sharing Is Disabled
+* 2.4.9 Ensure Remote Management Is Disabled
+* 2.5.3 Ensure Location Services Is Enabled
+* 2.9 Ensure Power Nap Is Disabled
+* 3.4 Ensure Security Auditing Retention Is Enabled
+* 5.1.2 Ensure System Integrity Protection Status (SIPS) Is Enabled
+* 5.1.5 Ensure Sealed System Volume (SSV) Is Enabled
+* 5.9 Ensure system is set to hibernate

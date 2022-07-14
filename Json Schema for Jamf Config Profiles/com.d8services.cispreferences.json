@@ -1,0 +1,748 @@
+{
+ 	"title": "com.d8services.cispreferences",
+ 	"description": "Payload to assist sites setting their CIS Benchmark values without having to edit a script.",
+ 	"properties": {
+        "1_1": {
+             "title": "Ensure All Apple-provided Software Is Current",
+             "description": "Ensure All Apple-provided Software Is Current",
+             "property_order": "1",
+             "type": "boolean",
+             "default": false
+             },
+        "1_2": {
+             "title": "Ensure Auto Update Is Enabled",
+             "description": "Ensure Auto Update Is Enabled",
+             "property_order": "2",
+             "type": "boolean",
+             "default": true
+             },
+        "1_3": {
+             "title": "Ensure Download New Updates When Available is Enabled",
+             "description": "Ensure Download New Updates When Available is Enabled",
+             "property_order": "3",
+             "type": "boolean",
+             "default": true
+             },
+        "1_4": {
+             "title": "Ensure Installation of App Update Is Enabled",
+             "description": "Ensure Installation of App Update Is Enabled",
+             "property_order": "4",
+             "type": "boolean",
+             "default": true
+             },
+        "1_5": {
+             "title": "Ensure System Data Files and Security Updates Are Downloaded Automatically Is Enabled",
+             "description": "Ensure System Data Files and Security Updates Are Downloaded Automatically Is Enabled",
+             "property_order": "5",
+             "type": "boolean",
+             "default": true
+             },
+        "1_6": {
+             "title": "Ensure Install of macOS Updates Is Enabled",
+             "description": "Ensure Install of macOS Updates Is Enabled",
+             "property_order": "6",
+             "type": "boolean",
+             "default": true
+             },
+        "1_7": {
+             "title": "Audit Computer Name",
+             "description": "Audit Computer Name",
+             "property_order": "7",
+             "type": "boolean",
+             "default": true
+             },
+        "2_1_1": {
+             "title": "Ensure Bluetooth Is Disabled If No Devices Are Paired",
+             "description": "Ensure Bluetooth Is Disabled If No Devices Are Paired",
+             "property_order": "8",
+             "type": "boolean",
+             "default": true
+             },
+        "2_1_2": {
+             "title": "Ensure Show Bluetooth Status in Menu Bar Is Enabled",
+             "description": "Ensure Show Bluetooth Status in Menu Bar Is Enabled",
+             "property_order": "9",
+             "type": "boolean",
+             "default": true
+             },
+        "2_10": {
+             "title": "Ensure Secure Keyboard Entry terminal.app is Enabled",
+             "description": "Ensure Secure Keyboard Entry terminal.app is Enabled",
+             "property_order": "10",
+             "type": "boolean",
+             "default": true
+             },
+        "2_11": {
+             "title": "Ensure EFI Version Is Valid and Checked Regularly",
+             "description": "Ensure EFI Version Is Valid and Checked Regularly",
+             "property_order": "11",
+             "type": "boolean",
+             "default": true
+             },
+        "2_12": {
+             "title": "Audit Automatic Actions for Optical Media",
+             "description": "Audit Automatic Actions for Optical Media",
+             "property_order": "12",
+             "type": "boolean",
+             "default": true
+             },
+        "2_13": {
+             "title": "Audit Siri Settings",
+             "description": "Audit Siri Settings",
+             "property_order": "13",
+             "type": "boolean",
+             "default": false
+             },
+        "2_14": {
+             "title": "Audit Sidecar Settings",
+             "description": "Audit Sidecar Settings",
+             "property_order": "14",
+             "type": "boolean",
+             "default": true
+             },
+        "2_15": {
+             "title": "Audit Touch ID and Wallet & Apple Pay Settings",
+             "description": "Audit Touch ID and Wallet & Apple Pay Settings",
+             "property_order": "15",
+             "type": "boolean",
+             "default": false
+             },
+        "2_16": {
+             "title": "Audit Notification System Preference Settings",
+             "description": "Audit Notification System Preference Settings",
+             "property_order": "16",
+             "type": "boolean",
+             "default": false
+             },
+        "2_17": {
+             "title": "Audit Passwords System Preference Setting",
+             "description": "Audit Passwords System Preference Setting",
+             "property_order": "17",
+             "type": "boolean",
+             "default": false
+             },
+        "2_2_1": {
+             "title": "Ensure Set time and date automatically Is Enabled",
+             "description": "Ensure Set time and date automatically Is Enabled",
+             "property_order": "18",
+             "type": "boolean",
+             "default": true
+             },
+        "2_2_2": {
+             "title": "Ensure time set is within appropriate limits",
+             "description": "Ensure time set is within appropriate limits",
+             "property_order": "19",
+             "type": "boolean",
+             "default": false
+             },
+        "2_3_1": {
+             "title": "Ensure an Inactivity Interval of 20 Minutes Or Less for the Screen Saver Is Enabled",
+             "description": "Ensure an Inactivity Interval of 20 Minutes Or Less for the Screen Saver Is Enabled",
+             "property_order": "20",
+             "type": "boolean",
+             "default": true
+             },
+        "2_3_2": {
+             "title": "Ensure Screen Saver Corners Are Secure",
+             "description": "Ensure Screen Saver Corners Are Secure",
+             "property_order": "21",
+             "type": "boolean",
+             "default": false
+             },
+        "2_3_3": {
+             "title": "Audit Lock Screen and Start Screen Saver Tools",
+             "description": "Audit Lock Screen and Start Screen Saver Tools",
+             "property_order": "22",
+             "type": "boolean",
+             "default": false
+             },
+        "2_4_1": {
+             "title": "Ensure Remote Apple Events Is Disabled",
+             "description": "Ensure Remote Apple Events Is Disabled",
+             "property_order": "23",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_10": {
+             "title": "Ensure Content Caching Is Disabled",
+             "description": "Ensure Content Caching Is Disabled",
+             "property_order": "24",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_11": {
+             "title": "Ensure AirDrop Is Disabled",
+             "description": "Ensure AirDrop Is Disabled",
+             "property_order": "25",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_12": {
+             "title": "Ensure Media Sharing Is Disabled",
+             "description": "Ensure Media Sharing Is Disabled",
+             "property_order": "26",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_13": {
+             "title": "Ensure AirPlay Receiver Is Disabled",
+             "description": "Ensure AirPlay Receiver Is Disabled",
+             "property_order": "27",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_2": {
+             "title": "Ensure Internet Sharing Is Disabled",
+             "description": "Ensure Internet Sharing Is Disabled",
+             "property_order": "28",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_3": {
+             "title": "Ensure Screen Sharing Is Disabled",
+             "description": "Ensure Screen Sharing Is Disabled",
+             "property_order": "29",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_4": {
+             "title": "Ensure Printer Sharing Is Disabled",
+             "description": "Ensure Printer Sharing Is Disabled",
+             "property_order": "30",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_5": {
+             "title": "Ensure Remote Login Is Disabled",
+             "description": "Ensure Remote Login Is Disabled",
+             "property_order": "31",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_6": {
+             "title": "Ensure DVD or CD Sharing Is Disabled",
+             "description": "Ensure DVD or CD Sharing Is Disabled",
+             "property_order": "32",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_7": {
+             "title": "Ensure Bluetooth Sharing Is Disabled",
+             "description": "Ensure Bluetooth Sharing Is Disabled",
+             "property_order": "33",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_8": {
+             "title": "Ensure File Sharing Is Disabled",
+             "description": "Ensure File Sharing Is Disabled",
+             "property_order": "34",
+             "type": "boolean",
+             "default": true
+             },
+        "2_4_9": {
+             "title": "Ensure Remote Management Is Disabled",
+             "description": "Ensure Remote Management Is Disabled",
+             "property_order": "35",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_1_1": {
+             "title": "Ensure FileVault Is Enabled",
+             "description": "Ensure FileVault Is Enabled",
+             "property_order": "36",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_1_2": {
+             "title": "Ensure all user storage APFS volumes are encrypted",
+             "description": "Ensure all user storage APFS volumes are encrypted",
+             "property_order": "37",
+             "type": "boolean",
+             "default": false
+             },
+        "2_5_1_3": {
+             "title": "Ensure all user storage CoreStorage volumes are encrypted",
+             "description": "Ensure all user storage CoreStorage volumes are encrypted",
+             "property_order": "38",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_2_1": {
+             "title": "Ensure Gatekeeper is Enabled",
+             "description": "Ensure Gatekeeper is Enabled",
+             "property_order": "39",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_2_2": {
+             "title": "Ensure Firewall Is Enabled",
+             "description": "Ensure Firewall Is Enabled",
+             "property_order": "40",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_2_3": {
+             "title": "Ensure Firewall Stealth Mode Is Enabled",
+             "description": "Ensure Firewall Stealth Mode Is Enabled",
+             "property_order": "41",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_3": {
+             "title": "Ensure Location Services Is Enabled",
+             "description": "Ensure Location Services Is Enabled",
+             "property_order": "42",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_4": {
+             "title": "Audit Location Services Access",
+             "description": "Audit Location Services Access",
+             "property_order": "43",
+             "type": "boolean",
+             "default": false
+             },
+        "2_5_5": {
+             "title": "Ensure Sending Diagnostic and Usage Data to Apple Is Disabled",
+             "description": "Ensure Sending Diagnostic and Usage Data to Apple Is Disabled",
+             "property_order": "44",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_6": {
+             "title": "Ensure Limit Ad Tracking Is Enabled",
+             "description": "Ensure Limit Ad Tracking Is Enabled",
+             "property_order": "45",
+             "type": "boolean",
+             "default": true
+             },
+        "2_5_7": {
+             "title": "Audit Camera Privacy and Confidentiality",
+             "description": "Audit Camera Privacy and Confidentiality",
+             "property_order": "46",
+             "type": "boolean",
+             "default": true
+             },
+        "2_6_1_1": {
+             "title": "Audit iCloud Configuration",
+             "description": "Audit iCloud Configuration",
+             "property_order": "47",
+             "type": "boolean",
+             "default": false
+             },
+        "2_6_1_2": {
+             "title": "Audit iCloud Keychain",
+             "description": "Audit iCloud Keychain",
+             "property_order": "48",
+             "type": "boolean",
+             "default": true
+             },
+        "2_6_1_3": {
+             "title": "Audit iCloud Drive",
+             "description": "Audit iCloud Drive",
+             "property_order": "49",
+             "type": "boolean",
+             "default": true
+             },
+        "2_6_1_4": {
+             "title": "Ensure iCloud Drive Document and Desktop Sync is Disabled",
+             "description": "Ensure iCloud Drive Document and Desktop Sync is Disabled",
+             "property_order": "50",
+             "type": "boolean",
+             "default": true
+             },
+        "2_6_2": {
+             "title": "Audit App Store Password Settings",
+             "description": "Audit App Store Password Settings",
+             "property_order": "51",
+             "type": "boolean",
+             "default": true
+             },
+        "2_7_1": {
+             "title": "Ensure Backup Up Automatically is Enabled",
+             "description": "Ensure Backup Up Automatically is Enabled",
+             "property_order": "52",
+             "type": "boolean",
+             "default": true
+             },
+        "2_7_2": {
+             "title": "Ensure Time Machine Volumes Are Encrypted",
+             "description": "Ensure Time Machine Volumes Are Encrypted",
+             "property_order": "53",
+             "type": "boolean",
+             "default": false
+             },
+        "2_8": {
+             "title": "Ensure Wake for Network Access Is Disabled",
+             "description": "Ensure Wake for Network Access Is Disabled",
+             "property_order": "54",
+             "type": "boolean",
+             "default": true
+             },
+        "2_9": {
+             "title": "Ensure Power Nap Is Disabled",
+             "description": "Ensure Power Nap Is Disabled",
+             "property_order": "55",
+             "type": "boolean",
+             "default": true
+             },
+        "3_1": {
+             "title": "Ensure Security Auditing Is Enabled",
+             "description": "Ensure Security Auditing Is Enabled",
+             "property_order": "56",
+             "type": "boolean",
+             "default": true
+             },
+        "3_2": {
+             "title": "Ensure Security Auditing Flags Are Configured Per Local Organizational Requirements",
+             "description": "Ensure Security Auditing Flags Are Configured Per Local Organizational Requirements",
+             "property_order": "57",
+             "type": "boolean",
+             "default": true
+             },
+        "3_3": {
+             "title": "Ensure install.log Is Retained for 365 or More Days and No Maximum Size",
+             "description": "Ensure install.log Is Retained for 365 or More Days and No Maximum Size",
+             "property_order": "58",
+             "type": "boolean",
+             "default": true
+             },
+        "3_4": {
+             "title": "Ensure Security Auditing Retention Is Enabled",
+             "description": "Ensure Security Auditing Retention Is Enabled",
+             "property_order": "59",
+             "type": "boolean",
+             "default": true
+             },
+        "3_5": {
+             "title": "Ensure Access to Audit Records Is Controlled",
+             "description": "Ensure Access to Audit Records Is Controlled",
+             "property_order": "60",
+             "type": "boolean",
+             "default": true
+             },
+        "3_6": {
+             "title": "Ensure Firewall Logging Is Enabled and Configured",
+             "description": "Ensure Firewall Logging Is Enabled and Configured",
+             "property_order": "61",
+             "type": "boolean",
+             "default": true
+             },
+        "3_7": {
+             "title": "Audit Software Inventory",
+             "description": "Audit Software Inventory",
+             "property_order": "62",
+             "type": "boolean",
+             "default": false
+             },
+        "4_1": {
+             "title": "Ensure Bonjour Advertising Services Is Disabled",
+             "description": "Ensure Bonjour Advertising Services Is Disabled",
+             "property_order": "63",
+             "type": "boolean",
+             "default": true
+             },
+        "4_2": {
+             "title": "Ensure Show Wi-Fi status in Menu Bar Is Enabled",
+             "description": "Ensure Show Wi-Fi status in Menu Bar Is Enabled",
+             "property_order": "64",
+             "type": "boolean",
+             "default": true
+             },
+        "4_3": {
+             "title": "Audit Network Specific Locations",
+             "description": "Audit Network Specific Locations",
+             "property_order": "65",
+             "type": "boolean",
+             "default": false
+             },
+        "4_4": {
+             "title": "Ensure HTTP Server Is Disabled",
+             "description": "Ensure HTTP Server Is Disabled",
+             "property_order": "66",
+             "type": "boolean",
+             "default": true
+             },
+        "4_5": {
+             "title": "Ensure NFS Server Is Disabled",
+             "description": "Ensure NFS Server Is Disabled",
+             "property_order": "67",
+             "type": "boolean",
+             "default": true
+             },
+        "4_6": {
+             "title": "Audit Wi-Fi Settings",
+             "description": "Audit Wi-Fi Settings",
+             "property_order": "68",
+             "type": "boolean",
+             "default": false
+             },
+        "5_1_1": {
+             "title": "Ensure Home Folders Are Secure",
+             "description": "Ensure Home Folders Are Secure",
+             "property_order": "69",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_2": {
+             "title": "Ensure System Integrity Protection Status (SIPS) Is Enabled",
+             "description": "Ensure System Integrity Protection Status (SIPS) Is Enabled",
+             "property_order": "70",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_3": {
+             "title": "Ensure Apple Mobile File Integrity Is Enabled",
+             "description": "Ensure Apple Mobile File Integrity Is Enabled",
+             "property_order": "71",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_4": {
+             "title": "Ensure Library Validation Is Enabled",
+             "description": "Ensure Library Validation Is Enabled",
+             "property_order": "72",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_5": {
+             "title": "Ensure Sealed System Volume (SSV) Is Enabled",
+             "description": "Ensure Sealed System Volume (SSV) Is Enabled",
+             "property_order": "73",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_6": {
+             "title": "Ensure Appropriate Permissions Are Enabled for System Wide Applications",
+             "description": "Ensure Appropriate Permissions Are Enabled for System Wide Applications",
+             "property_order": "74",
+             "type": "boolean",
+             "default": true
+             },
+        "5_1_7": {
+             "title": "Ensure No World Writable Files Exist in the System Folder",
+             "description": "Ensure No World Writable Files Exist in the System Folder",
+             "property_order": "75",
+             "type": "boolean",
+             "default": false
+             },
+        "5_1_8": {
+             "title": "Ensure No World Writable Files Exist in the Library Folder",
+             "description": "Ensure No World Writable Files Exist in the Library Folder",
+             "property_order": "76",
+             "type": "boolean",
+             "default": true
+             },
+        "5_10": {
+             "title": "Require an administrator password to access system-wide preferences",
+             "description": "Require an administrator password to access system-wide preferences",
+             "property_order": "77",
+             "type": "boolean",
+             "default": true
+             },
+        "5_11": {
+             "title": "Ensure an administrator account cannot login to another user's active and locked session",
+             "description": "Ensure an administrator account cannot login to another user's active and locked session",
+             "property_order": "78",
+             "type": "boolean",
+             "default": true
+             },
+        "5_12": {
+             "title": "Ensure a Custom Message for the Login Screen Is Enabled",
+             "description": "Ensure a Custom Message for the Login Screen Is Enabled",
+             "property_order": "79",
+             "type": "boolean",
+             "default": true
+             },
+        "5_13": {
+             "title": "Ensure a Login Window Banner Exists",
+             "description": "Ensure a Login Window Banner Exists",
+             "property_order": "80",
+             "type": "boolean",
+             "default": false
+             },
+        "5_14": {
+             "title": "Ensure Users' Accounts Do Not Have a Password Hint",
+             "description": "Ensure Users' Accounts Do Not Have a Password Hint",
+             "property_order": "81",
+             "type": "boolean",
+             "default": true
+             },
+        "5_15": {
+             "title": "Ensure Fast User Switching Is Disabled",
+             "description": "Ensure Fast User Switching Is Disabled",
+             "property_order": "82",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_1": {
+             "title": "Ensure Password Account Lockout Threshold Is Configured",
+             "description": "Ensure Password Account Lockout Threshold Is Configured",
+             "property_order": "83",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_2": {
+             "title": "Ensure Password Minimum Length Is Configured",
+             "description": "Ensure Password Minimum Length Is Configured",
+             "property_order": "84",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_3": {
+             "title": "Ensure Complex Password Must Contain Alphabetic Characters Is Configured",
+             "description": "Ensure Complex Password Must Contain Alphabetic Characters Is Configured",
+             "property_order": "85",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_4": {
+             "title": "Ensure Complex Password Must Contain Numeric Character Is Configured",
+             "description": "Ensure Complex Password Must Contain Numeric Character Is Configured",
+             "property_order": "86",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_5": {
+             "title": "Ensure Complex Password Must Contain Special Character Is Configured",
+             "description": "Ensure Complex Password Must Contain Special Character Is Configured",
+             "property_order": "87",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_6": {
+             "title": "Ensure Complex Password Must Contain Uppercase and Lowercase Characters Is Configured",
+             "description": "Ensure Complex Password Must Contain Uppercase and Lowercase Characters Is Configured",
+             "property_order": "88",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_7": {
+             "title": "Ensure Password Age Is Configured",
+             "description": "Ensure Password Age Is Configured",
+             "property_order": "89",
+             "type": "boolean",
+             "default": true
+             },
+        "5_2_8": {
+             "title": "Ensure Password History Is Configured",
+             "description": "Ensure Password History Is Configured",
+             "property_order": "90",
+             "type": "boolean",
+             "default": true
+             },
+        "5_3": {
+             "title": "Ensure the Sudo Timeout Period Is Set to Zero",
+             "description": "Ensure the Sudo Timeout Period Is Set to Zero",
+             "property_order": "91",
+             "type": "boolean",
+             "default": true
+             },
+        "5_4": {
+             "title": "Ensure a Separate Timestamp Is Enabled for Each User/tty Combo",
+             "description": "Ensure a Separate Timestamp Is Enabled for Each User/tty Combo",
+             "property_order": "92",
+             "type": "boolean",
+             "default": true
+             },
+        "5_5": {
+             "title": "Ensure login keychain is locked when the computer sleeps",
+             "description": "Ensure login keychain is locked when the computer sleeps",
+             "property_order": "93",
+             "type": "boolean",
+             "default": true
+             },
+        "5_6": {
+             "title": "Ensure the root Account Is Disabled",
+             "description": "Ensure the root Account Is Disabled",
+             "property_order": "94",
+             "type": "boolean",
+             "default": true
+             },
+        "5_7": {
+             "title": "Ensure Automatic Login Is Disabled",
+             "description": "Ensure Automatic Login Is Disabled",
+             "property_order": "95",
+             "type": "boolean",
+             "default": true
+             },
+        "5_8": {
+             "title": "Ensure a Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled",
+             "description": "Ensure a Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled",
+             "property_order": "96",
+             "type": "boolean",
+             "default": true
+             },
+        "5_9": {
+             "title": "Ensure system is set to hibernate",
+             "description": "Ensure system is set to hibernate",
+             "property_order": "97",
+             "type": "boolean",
+             "default": true
+             },
+        "6_1_1": {
+             "title": "Ensure Login Window Displays as Name and Password Is Enabled",
+             "description": "Ensure Login Window Displays as Name and Password Is Enabled",
+             "property_order": "98",
+             "type": "boolean",
+             "default": true
+             },
+        "6_1_2": {
+             "title": "Ensure Show Password Hints Is Disabled",
+             "description": "Ensure Show Password Hints Is Disabled",
+             "property_order": "99",
+             "type": "boolean",
+             "default": true
+             },
+        "6_1_3": {
+             "title": "Ensure Guest Account Is Disabled",
+             "description": "Ensure Guest Account Is Disabled",
+             "property_order": "100",
+             "type": "boolean",
+             "default": true
+             },
+        "6_1_4": {
+             "title": "Ensure Guest Access to Shared Folders Is Disabled",
+             "description": "Ensure Guest Access to Shared Folders Is Disabled",
+             "property_order": "101",
+             "type": "boolean",
+             "default": true
+             },
+        "6_1_5": {
+             "title": "Ensure the Guest Home Folder Does Not Exist",
+             "description": "Ensure the Guest Home Folder Does Not Exist",
+             "property_order": "102",
+             "type": "boolean",
+             "default": true
+             },
+        "6_2": {
+             "title": "Ensure Show All Filename Extensions Setting is Enabled  ",
+             "description": "Ensure Show All Filename Extensions Setting is Enabled  ",
+             "property_order": "103",
+             "type": "boolean",
+             "default": true
+             },
+        "6_3": {
+             "title": "Ensure Automatic Opening of Safe Files in Safari Is Disabled (Automated)",
+             "description": "Ensure Automatic Opening of Safe Files in Safari Is Disabled (Automated)",
+             "property_order": "104",
+             "type": "boolean",
+             "default": true
+             },
+        "7_1": {
+             "title": "Extensible Firmware Interface (EFI) password (Manual) ",
+             "description": "Extensible Firmware Interface (EFI) password (Manual) ",
+             "property_order": "105",
+             "type": "boolean",
+             "default": false
+             },
+        "7_2": {
+             "title": "FileVault and Local Account Password Reset using AppleID",
+             "description": "FileVault and Local Account Password Reset using AppleID",
+             "property_order": "106",
+             "type": "boolean",
+             "default": false
+             }
+ 	}
+}
