@@ -122,91 +122,27 @@ and ensuring the import worked as expected.
 **Configuration Profiles**
 
 CIS Benchmark Custom Values macOS 12
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Distribution    | Use the Upload function of    | All Computers    |
-| Met              | the Jamf Server to Upload     |                  |
-| hod]{.underline} | "CIS Benchmark Custom Values  |                  |
-|                  | macOS 12.mobileconfig". Type  |                  |
-| Automatic        | in its name and set its       |                  |
-|                  | Category and Scope.           |                  |
-| [Descript        |                               |                  |
-| ion]{.underline} | Please check that the Custom  |                  |
-|                  | payload has the same contents |                  |
-| Contents of "CIS | as the Individual XML Files   |                  |
-| Benchmark Custom |                               |                  |
-| Values macOS 12  |                               |                  |
-| Description"     |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ---------------- 
+Distribution Method Automatic Description Contents of "CIS Benchmark Custom Values macOS 12 Description" | Use the Upload function of the Jamf Server to Upload "CIS Benchmark Custom Values macOS 12.mobileconfig". Type in its name and set its Category and Scope. Please check that the Custom payload has the same contents as the Individual XML Files | All Computers    
 
 CIS Benchmark Energy Saver, Security & Privacy and Login Window macOS 12
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Distribution    | Use the Upload function of    | All Computers    |
-| Met              | the Jamf Server to Upload     |                  |
-| hod]{.underline} | "CIS Benchmark Energy Saver,  |                  |
-|                  | Security & Privacy and Login  |                  |
-| Automatic        | Window macOS                  |                  |
-|                  | 12.mobileconfig". Type in its |                  |
-| [Descript        | name and set its Category and |                  |
-| ion]{.underline} | Scope.                        |                  |
-|                  |                               |                  |
-| Contents of "CIS |                               |                  |
-| Benchmark Energy |                               |                  |
-| Saver, Security  |                               |                  |
-| & Privacy and    |                               |                  |
-| Login Window     |                               |                  |
-| macOS 12         |                               |                  |
-| Description"     |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ---------------- 
+Distribution Method Automatic Description - Contents of “CIS Benchmark Energy Saver, Security & Privacy and Login Window macOS 12 Description” | Use the Upload function of the Jamf Server to Upload “CIS Benchmark Energy Saver, Security & Privacy and Login Window macOS 12.mobileconfig”. Type in its name and set its Category and Scope. | All Computers
 
 CIS Benchmark Restrictions macOS 12
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Distribution    | Use the Upload function of    | All Computers    |
-| Met              | the Jamf Server to Upload     |                  |
-| hod]{.underline} | "CIS Benchmark Restrictions   |                  |
-|                  | macOS 12.mobileconfig". Type  |                  |
-| Automatic        | in its name and set its       |                  |
-|                  | Category and Scope.           |                  |
-| [Descript        |                               |                  |
-| ion]{.underline} |                               |                  |
-|                  |                               |                  |
-| Contents of "CIS |                               |                  |
-| Benchmark        |                               |                  |
-| Restrictions     |                               |                  |
-| macOS 12         |                               |                  |
-| Description"     |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ---------------- 
+Distribution MethodAutomatic Description Contents of “CIS Benchmark Restrictions macOS 12 Description” | Use the Upload function of the Jamf Server to Upload “CIS Benchmark Restrictions macOS 12.mobileconfig”. Type in its name and set its Category and Scope. | All Computers
 
 CIS Benchmarks Password Policy
+General | Payload                       | Scope
+------------------ | ----------------------------- | ---------------- 
+Distribution Method Automatic Description Contents of “CIS Benchmarks Password Policy Description” | Use the Upload function of the Jamf Server to Upload “CIS Password Policy.mobileconfig”. Type in its name and set its Category and Scope. | All Computers
 
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Distribution    | Use the Upload function of    | All Computers    |
-| Met              | the Jamf Server to Upload     |                  |
-| hod]{.underline} | "CIS Password                 |                  |
-|                  | Policy.mobileconfig". Type in |                  |
-| Automatic        | its name and set its Category |                  |
-|                  | and Scope.                    |                  |
-| [Descript        |                               |                  |
-| ion]{.underline} |                               |                  |
-|                  |                               |                  |
-| Contents of "CIS |                               |                  |
-| Benchmarks       |                               |                  |
-| Password Policy  |                               |                  |
-| Description"     |                               |                  |
-+------------------+-------------------------------+------------------+
 
-![Application, table Description automatically
-generated](/Users/ttyler/Desktop/CIS Benchmarking Screen Grabs/media/image1.png){width="6.263888888888889in"
+![](./media/image1.png){width="6.263888888888889in"
 height="1.4076388888888889in"}
 
 **Scripts**
@@ -214,71 +150,28 @@ height="1.4076388888888889in"}
 **PREFERENCES**
 
 Set Preferences by Script
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Trig            | 1_S                           | All Computers    |
-| ger]{.underline} | et_Organization_Priorities.sh |                  |
-|                  |                               |                  |
-| Recurring        |                               |                  |
-| Check-in         |                               |                  |
-|                  |                               |                  |
-| [Freque          |                               |                  |
-| ncy]{.underline} |                               |                  |
-|                  |                               |                  |
-| Once every week  |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ----------------
+Trigger Recurring Check-in Frequency Once every week | 1_Set_Organization_Priorities.sh | All Computers
 
 Set Preferences using a Configuration Profile
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Distribution    | Application and Custom        | All Computers    |
-| Met              | Settings                      |                  |
-| hod]{.underline} |                               |                  |
-|                  | Custom Schema, populate as    |                  |
-| Automatic        | preferred                     |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ----------------
+Distribution Method Automatic | Application and Custom Settings Custom Schema, populate as preferred | All Computers
 
 **AUDIT**
 
 Run Audit Script
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Trig            | Script:                       | All Computers    |
-| ger]{.underline} | 2                             |                  |
-|                  | _Security_Audit_Compliance.sh |                  |
-| Recurring        |                               |                  |
-| Check-in         | Maintenance: Update Inventory |                  |
-|                  |                               |                  |
-| [Freque          |                               |                  |
-| ncy]{.underline} |                               |                  |
-|                  |                               |                  |
-| Once every week  |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ----------------
+Trigger Recurring Check-in Frequency Once every week | Script: 2_Security_Audit_Compliance.sh Maintenance: Update Inventory | All Computers
 
 **Remediate**
 
 Run Remediation Script
-
-+------------------+-------------------------------+------------------+
-| General          | Payload                       | Scope            |
-+==================+===============================+==================+
-| [Trig            | Script:                       | Smart Group:     |
-| ger]{.underline} | 3_Security_Remediation.sh     | 2.6_Audit_Count  |
-|                  | (Before)                      | (Extension       |
-| Recurring        |                               | Attribute) is    |
-| Check-in         | 2                             | Greater than 3   |
-|                  | _Security_Audit_Compliance.sh |                  |
-| [Freque          | (After)                       |                  |
-| ncy]{.underline} |                               |                  |
-|                  | Maintenance: Update Inventory |                  |
-| Once every week  |                               |                  |
-+------------------+-------------------------------+------------------+
+General | Payload                       | Scope
+------------------ | ----------------------------- | ----------------
+Trigger Recurring Check-in Frequency Once every week | Script: 3_Security_Remediation.sh (Before) 2_Security_Audit_Compliance.sh (After) Maintenance: Update Inventory | All Computers
 
 ![Graphical user interface, application Description automatically
 generated](/Users/ttyler/Desktop/CIS Benchmarking Screen Grabs/media/image2.png){width="6.263888888888889in"
