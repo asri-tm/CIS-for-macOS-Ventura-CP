@@ -117,7 +117,9 @@ Support/SecurityScoring/org_security_score.plist by default.
 Start by first downloading the Zip File for the Benchmark contents
 
 Expand the Zip file and start by uploading the config profiles, scripts
-and ensuring the import worked as expected.
+and ensuring the import worked as expected, please check the CIS Custom profile payload as previous import have been missing some data.
+
+Watch for the device nameing, it is currently set to Serial number. If you do not wish to check for Device naming, simply disable it through either the "1_Set_Organization_Priorities.sh" or via your configuration profile.
 
 **Configuration Profiles**
 
