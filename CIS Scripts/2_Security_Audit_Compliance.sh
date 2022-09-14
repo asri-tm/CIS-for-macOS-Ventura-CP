@@ -55,10 +55,12 @@ currentUser="$(/usr/bin/stat -f%Su /dev/console)"
 hardwareUUID="$(/usr/sbin/system_profiler SPHardwareDataType | grep "Hardware UUID" | awk -F ": " '{print $2}' | xargs)"
 
 logFile="/Library/Application Support/SecurityScoring/remediation.log"
+configProfileCISPrefs="/Library/Managed Preferences/com.d8services.cispreferences.plist"
+
 
 osVersion="$(sw_vers -productVersion | grep -o '^[0-9]\+')"
 if [ "$osVersion" -lt 11 ]; then
-	echo "This script does not support an OS lower than Big Sur Please use https://github.com/D8Services/CIS-for-macOS-Monterey-CP instead"
+	echo "This script does not support an OS lower than Big Sur Please use https://github.com/jamf/CIS-for-macOS-Catalina-CP"
 	exit 0
 fi
 
