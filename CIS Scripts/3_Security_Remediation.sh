@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 ####################################################################################################
 #
@@ -42,6 +42,8 @@
 # Non-compliant items are logged to /Library/Application Support/SecurityScoring/org_audit
 
 plistlocation="/Library/Application Support/SecurityScoring/org_security_score.plist"
+configProfileCISPrefs="/Library/Managed Preferences/com.d8services.cispreferences.plist"
+
 currentUser="$(/usr/bin/stat -f%Su /dev/console)"
 currentUserID="$(/usr/bin/id -u $currentUser)"
 hardwareUUID="$(/usr/sbin/system_profiler SPHardwareDataType | grep "Hardware UUID" | awk -F ": " '{print $2}' | xargs)"
