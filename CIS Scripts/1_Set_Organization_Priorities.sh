@@ -83,7 +83,8 @@ OrgScore1_6="true"
 
 # 1.7 Audit Computer Name
 # Validated in script ok
-OrgScore1_7="true"
+# Disabled for now as we use different naming convention for Computer Name in TM
+OrgScore1_7="false"
 
 # 2.1.1 Ensure Bluetooth Is Disabled If No Devices Are Paired
 # Validated in script ok
